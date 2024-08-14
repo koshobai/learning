@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinetic Text Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+      }
+      .kinetic-typing {
+        font-size: 14px;
+        color: #333;
+        border-right: 2px solid;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0; /* Start with width 0 to animate */
+        animation: typing 4s steps(30, end) forwards,
+          blink-caret 0.75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kinetic-typing">
+      Welcome to Koshobai's secret text-propogating page! <br />
+      We're experimenting here. Hope you enjoyed this. 😉<br />Feel free to
+      check in, but we'll eventually abandon this page.
+    </div>
+
+    <script>
+      // Example without additional JS needed, CSS handles the animation
+    </script>
+  </body>
+</html>
